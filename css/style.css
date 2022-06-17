@@ -8,15 +8,21 @@
 
 html {
   font-size: 62.5%;
-  font-family: "robotoregular";
+  font-family: "roboto-regular";
 }
 
 body {
   font-size: 1.6rem;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -25,6 +31,9 @@ li {
 
 h1 {
   font-family: "shrikhand";
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin: 0;
 }
 
 h2::first-letter,
@@ -35,16 +44,73 @@ p::first-letter {
 }
 
 @font-face {
-  font-family: "robotoregular";
-  src: url("../assets/font/roboto/Roboto-Regular-webfont.woff") format("woff"), url("../assets/font/roboto/Roboto-Regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "roboto-regular";
+  src: url("../assets/font/roboto/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "shrikhand";
   src: url("../assets/font/shrikhand/shrikhand.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+}
+button {
+  width: fit-content;
+  padding: 1.6rem 2.2rem;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  border-radius: 3rem;
+  border-style: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: box-shadow 250ms, filter 250ms;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+  filter: brightness(105%);
+}
+
+.homePage__header {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.location > p {
+  font-weight: bold;
+  color: #353535;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: #e3e3e3;
+  box-shadow: inset 0rem 0.3rem 0.4rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.location > p > i {
+  padding-right: 1.5rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 29rem;
+  background: #f5f5f5;
+}
+.information > h2 {
+  font-size: 2.2rem;
+  margin-top: 3.8rem;
+}
+.information > p {
+  font-size: 1.8rem;
+  margin-top: 2.2rem;
+  padding: 0 3rem;
+}
+.information > button {
+  align-self: center;
+  margin-top: 3.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
