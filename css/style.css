@@ -36,6 +36,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+
 h2::first-letter,
 h3::first-letter,
 span::first-letter,
@@ -56,7 +60,7 @@ p::first-letter {
 button {
   width: fit-content;
   padding: 1.6rem 2.2rem;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #9356dc, #ff79da);
   border-radius: 3rem;
   border-style: none;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -71,13 +75,12 @@ button:hover {
 
 .homePage__header {
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 1.4rem 0 1rem 0;
 }
 
 .location {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 .location > p {
@@ -96,11 +99,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 29rem;
+  height: 285px;
   background: #f5f5f5;
 }
 .information > h2 {
-  font-size: 2.2rem;
   margin-top: 3.8rem;
 }
 .information > p {
@@ -111,6 +113,59 @@ button:hover {
 .information > button {
   align-self: center;
   margin-top: 3.4rem;
+}
+
+.instruction {
+  margin: 4.8rem 2.2rem;
+}
+.instruction > h2 {
+  margin-bottom: 3rem;
+}
+
+.instructionCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.instructionCard {
+  display: flex;
+  align-items: center;
+  padding: 2.6rem;
+  border-radius: 2.4rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+}
+.instructionCard:hover {
+  cursor: pointer;
+  background-color: rgba(146, 86, 220, 0.1294117647);
+}
+.instructionCard:hover > i {
+  color: #9356dc;
+}
+.instructionCard__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 3.5rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #f5f5f5;
+  background: #9356dc;
+}
+.instructionCard > i {
+  position: relative;
+  right: 2rem;
+  color: grey;
+}
+.instructionCard > p {
+  font-weight: bold;
+}
+
+.restaurants {
+  background: #f5f5f5;
 }
 
 /*# sourceMappingURL=style.css.map */
