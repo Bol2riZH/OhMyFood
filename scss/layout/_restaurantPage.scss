@@ -158,7 +158,8 @@
     width: 180px;
   }
 }
-@for $i from 1 to 10 { //boucle de chargement des plats
+// Loading plates
+@for $i from 1 to 10 {
     #case-#{$i} {
         animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
         animation-delay:  #{$i/10}s;

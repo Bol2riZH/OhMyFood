@@ -51,11 +51,23 @@
   > h2 {
     margin-bottom: 3rem;
   }
+  @include large {
+    margin: 4.8rem 4rem 6.6rem 4rem;
+  }
 }
 .instructionCards {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+
+  @include small {
+    flex-direction: row;
+    justify-content: space-around;
+
+    gap: 5rem;
+
+    white-space: nowrap;
+  }
 }
 .instructionCard {
   display: flex;
@@ -98,6 +110,9 @@
   > p {
     font-weight: bold;
   }
+  @include small {
+    width: 100%;
+  }
 }
 
 // ___ SECTION RESTAURANTS ___ //
@@ -107,12 +122,22 @@
   > h2 {
     margin-bottom: 2.2rem;
   }
+  @include large {
+    padding: 5.8rem 4rem;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+  }
 }
 .restaurantsCards {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 250px);
   gap: 2rem;
+  @include small {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 4rem;
+  }
 }
 .restaurantCard {
   overflow: hidden;

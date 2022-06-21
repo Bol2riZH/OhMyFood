@@ -23,4 +23,11 @@ footer {
   a {
     color: white;
   }
+  @include large {
+    h1,
+    ul {
+      width: 1440px;
+      margin: auto;
+    }
+  }
 }
