@@ -1,7 +1,8 @@
 // ___ HEADER ___ //
 .homePage__header {
   text-align: center;
-  margin: 1.4rem 0 1rem 0;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 // ___ SECTION LOCATION ___ //
@@ -28,9 +29,6 @@
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-  height: 285px;
-
   background: $light-grey;
   > h2 {
     margin-top: 3.8rem;
@@ -43,12 +41,13 @@
   > button {
     align-self: center;
     margin-top: 3.4rem;
+    margin-bottom: 5rem;
   }
 }
 
 // ___ SECTION INSTRUCTION ___ //
 .instruction {
-  margin: 4.8rem 2.2rem;
+  margin: 4.8rem 2.2rem 6.6rem 2.2rem ; 
   > h2 {
     margin-bottom: 3rem;
   }
@@ -62,7 +61,7 @@
   display: flex;
   align-items: center;
 
-  padding: 2.6rem;
+  padding: 2.4rem;
   border-radius: 2.4rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
@@ -104,4 +103,65 @@
 // ___ SECTION RESTAURANTS ___ //
 .restaurants {
   background: $light-grey;
+  padding: 5.8rem 2.2rem;
+  > h2 {
+    margin-bottom: 2.2rem;
+  }
+}
+.restaurantsCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 250px);
+  gap: 2rem;
+}
+.restaurantCard {
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 2rem .3rem rgba(0, 0, 0, 0.1);
+
+  transition: 300ms;
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+  }
+  &__img {
+    height: 70%;
+    > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__new {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+
+    padding: .7rem;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: darken($tertiary-color, 35);
+
+    background: $tertiary-color;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1.4rem;
+    margin-right: 2.2rem;
+    margin-left: 1.4rem;
+
+    line-height: 2.4rem;
+    > i {
+      font-size: 2.8rem;
+    }
+  }
 }
