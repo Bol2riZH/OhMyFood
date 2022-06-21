@@ -42,18 +42,122 @@
   }
 }
 .menu {
-    padding: 3.2rem 2.2rem;
-    background: $light-grey;
+  padding: 3.2rem 2.2rem;
+  background: $light-grey;
 }
+.course {
+  min-width: 0; //permet ellipsis des plats
+  > h3 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+  > h3::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: $tertiary-color;
 
-.menu__footer {
+    margin-top: 0.5rem;
+  }
+}
+.plate {
+  cursor: pointer;
+
+  display: flex;
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+  padding: 1.2rem;
+  margin: 2rem 0;
+
+  &__name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    flex: 1; // div take all space
+    > span {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    > p {
+      font-size: 1.4rem;
+      font-weight: lighter;
+
+      margin-top: 0.5rem;
+
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  &__price {
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    margin-left: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: relative;
+
+    width: 28px; // init width price to change it on :hover
+    transition: width 500ms;
+  }
+  // green background
+  &__price::before {
+    content: '';
+    background: $tertiary-color;
+    margin-left: 1rem;
+
+    width: 70px;
+    height: 80px;
+
+    position: absolute;
+    top: -15px;
+    left: 35px;
+  }
+  // check icone
+  &__price::after {
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    background: $light-grey;
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
 
-    padding-bottom: 7rem;
-    button {
-        width: 180px;
-    }
+    position: absolute;
+    left: 6.4rem;
+
+    transform: rotate(120deg);
+    transition: transform 500ms;
+  }
+  &:hover &__price {
+    width: 99px;
+  }
+  &:hover &__price::after {
+    transform: rotate(0deg);
+  }
+}
+.menu__order {
+  display: flex;
+  justify-content: center;
+
+  background: $light-grey;
+
+  padding-bottom: 7rem;
+  button {
+    width: 180px;
+  }
 }

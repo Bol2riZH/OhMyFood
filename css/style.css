@@ -295,13 +295,100 @@ button:hover {
   background: #f6f6f6;
 }
 
-.menu__footer {
+.course {
+  min-width: 0;
+}
+.course > h3 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.course > h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #99e2d0;
+  margin-top: 0.5rem;
+}
+
+.plate {
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  margin: 2rem 0;
+}
+.plate__name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+}
+.plate__name > span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.plate__name > p {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.plate__price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  width: 28px;
+  transition: width 500ms;
+}
+.plate__price::before {
+  content: "";
+  background: #99e2d0;
+  margin-left: 1rem;
+  width: 70px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 35px;
+}
+.plate__price::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  left: 6.4rem;
+  transform: rotate(120deg);
+  transition: transform 500ms;
+}
+.plate:hover .plate__price {
+  width: 99px;
+}
+.plate:hover .plate__price::after {
+  transform: rotate(0deg);
+}
+
+.menu__order {
   display: flex;
   justify-content: center;
   background: #f6f6f6;
   padding-bottom: 7rem;
 }
-.menu__footer button {
+.menu__order button {
   width: 180px;
 }
 
