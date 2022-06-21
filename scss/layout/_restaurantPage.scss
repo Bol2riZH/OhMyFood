@@ -21,7 +21,7 @@
 }
 .menu__header {
   position: relative;
-  margin-top: -4.5rem;
+  margin-top: -6.2rem;
 
   display: flex;
   justify-content: space-between;
@@ -40,13 +40,28 @@
     font-weight: lighter;
     font-family: 'shrikhand';
   }
+  @include medium {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 .menu {
   padding: 3.2rem 2.2rem;
   background: $light-grey;
+  @include medium {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+  }
 }
 .course {
-  min-width: 0; //permet ellipsis des plats
+  min-width: 0; // alowed the check to work nicely
+  @include medium {
+    width: 100%;
+  }
   > h3 {
     font-size: 1.6rem;
     font-weight: lighter;
@@ -75,7 +90,6 @@
 
   padding: 1.2rem;
   margin: 2rem 0;
-
   &__name {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -159,9 +173,9 @@
   }
 }
 // Loading plates
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
     #case-#{$i} {
         animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-        animation-delay:  #{$i/10}s;
+        animation-delay:  #{$i/11}s;
     }
 }

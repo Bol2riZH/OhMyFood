@@ -40,7 +40,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "roboto-regular";
+  font-family: 'roboto-regular';
 }
 
 body {
@@ -62,7 +62,7 @@ li {
 }
 
 h1 {
-  font-family: "shrikhand";
+  font-family: 'shrikhand';
   font-size: 2.8rem;
   font-weight: 100;
   margin: 0;
@@ -84,12 +84,12 @@ p::first-letter {
 }
 
 @font-face {
-  font-family: "roboto-regular";
-  src: url("../assets/font/roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: 'roboto-regular';
+  src: url('../assets/font/roboto/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: "shrikhand";
-  src: url("../assets/font/shrikhand/shrikhand.woff2") format("woff2");
+  font-family: 'shrikhand';
+  src: url('../assets/font/shrikhand/shrikhand.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -119,15 +119,16 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  content: "\f004";
-  font-family: "Font Awesome 6 Free";
+  content: '\f004';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   background-image: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
   transform: scale(0);
-  transition: opacity ease-in-out 600ms, filter ease-in-out 500ms, transform ease-in-out 300ms;
+  transition: opacity ease-in-out 600ms, filter ease-in-out 500ms,
+    transform ease-in-out 300ms;
 }
 
 .fa-heart:hover::after {
@@ -286,9 +287,14 @@ button:hover {
 .restaurants > h2 {
   margin-bottom: 2.2rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurants {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
 @media screen and (min-width: 1440px) {
   .restaurants {
-    padding: 5.8rem 4rem;
     border-top-right-radius: 3rem;
     border-top-left-radius: 3rem;
   }
@@ -371,7 +377,7 @@ button:hover {
 
 .menu__header {
   position: relative;
-  margin-top: -4.5rem;
+  margin-top: -6.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -385,16 +391,36 @@ button:hover {
 .menu__header > h2 {
   font-size: 2.8rem;
   font-weight: lighter;
-  font-family: "shrikhand";
+  font-family: 'shrikhand';
+}
+@media screen and (min-width: 992px) {
+  .menu__header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .menu {
   padding: 3.2rem 2.2rem;
   background: #f6f6f6;
 }
+@media screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
 
 .course {
   min-width: 0;
+}
+@media screen and (min-width: 992px) {
+  .course {
+    width: 100%;
+  }
 }
 .course > h3 {
   font-size: 1.6rem;
@@ -402,7 +428,7 @@ button:hover {
   text-transform: uppercase;
 }
 .course > h3::after {
-  content: "";
+  content: '';
   display: block;
   width: 45px;
   height: 3px;
@@ -450,7 +476,7 @@ button:hover {
   transition: width 500ms;
 }
 .plate__price::before {
-  content: "";
+  content: '';
   background: #99e2d0;
   margin-left: 1rem;
   width: 70px;
@@ -460,8 +486,8 @@ button:hover {
   left: 35px;
 }
 .plate__price::after {
-  content: "\f058";
-  font-family: "Font Awesome 6 Free";
+  content: '\f058';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 600;
   font-size: 2.4rem;
   color: white;
@@ -489,48 +515,63 @@ button:hover {
 }
 
 #case-1 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.1s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.0909090909s;
 }
 
 #case-2 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.2s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.1818181818s;
 }
 
 #case-3 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.3s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.2727272727s;
 }
 
 #case-4 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.4s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.3636363636s;
 }
 
 #case-5 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.5s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.4545454545s;
 }
 
 #case-6 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.6s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.5454545455s;
 }
 
 #case-7 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.7s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.6363636364s;
 }
 
 #case-8 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.8s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.7272727273s;
 }
 
 #case-9 {
-  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-  animation-delay: 0.9s;
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.8181818182s;
+}
+
+#case-10 {
+  animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation-delay: 0.9090909091s;
 }
 
 footer {
@@ -561,7 +602,7 @@ footer a {
 }
 @media screen and (min-width: 1440px) {
   footer h1,
-footer ul {
+  footer ul {
     width: 1440px;
     margin: auto;
   }
