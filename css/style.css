@@ -589,6 +589,12 @@ footer .fa-handshake-angle {
 footer a {
   color: white;
 }
+footer li:hover {
+  color: #9356dc;
+}
+footer li:hover a {
+  color: #9356dc;
+}
 @media screen and (min-width: 1440px) {
   footer h1,
 footer ul {

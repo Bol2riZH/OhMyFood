@@ -23,6 +23,12 @@ footer {
   a {
     color: white;
   }
+  li:hover {
+    color: $secondary-color;
+    a {
+      color: $secondary-color;
+    }
+  }
   @include large {
     h1,
     ul {
