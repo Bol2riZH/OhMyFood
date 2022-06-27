@@ -54,7 +54,6 @@
     gap: 4rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    
   }
 }
 .course {
@@ -174,8 +173,11 @@
 }
 // Loading plates
 @for $i from 1 to 11 {
-    #case-#{$i} {
-        animation: menu-plate-loading 1000ms cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-        animation-delay:  #{$i/11}s;
-    }
+  #case-#{$i} {
+    animation: menu-plate-loading
+      1000ms
+      cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      both;
+    animation-delay: #{calc($i/11)}s;
+  }
 }

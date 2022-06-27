@@ -2,7 +2,8 @@ footer {
   background: $dark-grey;
   color: white;
   padding: 2.2rem;
-  > h1 {
+  > p {
+    font-family: 'shrikhand';
     font-size: 1.8rem;
   }
   > ul {
@@ -30,7 +31,7 @@ footer {
     }
   }
   @include large {
-    h1,
+    p,
     ul {
       width: 1440px;
       margin: auto;
