@@ -9,6 +9,7 @@
 .location {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   text-align: center;
   > p {
@@ -47,12 +48,14 @@
 
 // ___ SECTION INSTRUCTION ___ //
 .instruction {
-  margin: 4.8rem 2.2rem 6.6rem 2.2rem;
+  width: 90%;
+  margin-top: 4.8rem;
+  margin-bottom: 6.6rem;
   > h2 {
     margin-bottom: 3rem;
   }
   @include large {
-    margin: 4.8rem 4rem 6.6rem 4rem;
+    max-width: 1360px;
   }
 }
 .instructionCards {
@@ -63,10 +66,9 @@
   @include small {
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 
     gap: 5rem;
-
-    white-space: nowrap;
   }
 }
 .instructionCard {
