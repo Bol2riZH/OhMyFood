@@ -127,6 +127,7 @@ button:hover {
 .fa-heart {
   font-size: 2.8rem;
   position: relative;
+  cursor: pointer;
 }
 
 .fa-heart::after {
