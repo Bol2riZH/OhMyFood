@@ -1,5 +1,5 @@
 # OhMyFood!
-### OpenClassrooms Project 3 - Food website (HTML - CSS / SASS)
+## OpenClassrooms Project 3 - Food website (HTML - CSS / SASS)
 
 This project is about learning advanced CSS (styles and animations) and SASS (SCSS).
 
