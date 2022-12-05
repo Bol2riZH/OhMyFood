@@ -1,8 +1,9 @@
-# OpenClassrooms_P3
-Dynamisez une page web avec des animations CSS (HTML - CSS/SASS)
+# OpenClassrooms Project 3 - Food website (HTML - CSS / SASS)
 
-En tant que développeur web junior chez Ohmyfood! l'objectif de ce projet est :
-Le développement d'un site web 100% mobile.
+This project is about learning advanced CSS (styles and animations) and SASS (SCSS).
 
-- Utilisation de SASS
-- Animations avancées
+## Sass is perfect to enhance and structure your CSS.
+
+> Have a look at it [here](https://oh-my-food-nu.vercel.app/) !
+
+![OhmyFood](https://user-images.githubusercontent.com/101552588/205648390-2b6c983d-57bc-4887-b4a0-78c871360a0f.png)
